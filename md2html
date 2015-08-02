@@ -25,12 +25,12 @@ printStatus "[>   ] Creating $OUT_FILE_PATH..."
 
 echo -n "" > "$OUT_FILE_PATH"
 
-printStatus "[=>  ] Embedding Markdown source..."
-
-echo "<!-- Markdown Source -->" >> "$OUT_FILE_PATH"
-echo "<!--" >> "$OUT_FILE_PATH"
-cat "$IN_FILE_PATH" >> "$OUT_FILE_PATH"
-echo "-->" >> "$OUT_FILE_PATH"
+#printStatus "[=>  ] Embedding Markdown source..."
+#
+#echo "<!-- Markdown Source -->" >> "$OUT_FILE_PATH"
+#echo "<!--" >> "$OUT_FILE_PATH"
+#cat "$IN_FILE_PATH" >> "$OUT_FILE_PATH"
+#echo "-->" >> "$OUT_FILE_PATH"
 
 printStatus "[==> ] Starting HTML and including CSS..."
 
@@ -44,7 +44,7 @@ echo "</style>" >> "$OUT_FILE_PATH"
 echo "</head>" >> "$OUT_FILE_PATH"
 echo "<body>" >> "$OUT_FILE_PATH"
 
-echo "<b>$IN_FILE_NAME</b> - Generated on <b>`date`</b> by <b>`whoami`</b> using <a href=\"http://daringfireball.net/projects/markdown/\">Markdown</a>. Source is embedded." >> "$OUT_FILE_PATH"
+echo "<b>$IN_FILE_NAME</b> - Generated on <b>`date`</b> by <b>`whoami`</b> using <a href=\"http://daringfireball.net/projects/markdown/\">Markdown</a>." >> "$OUT_FILE_PATH"
 echo "<hr>" >> "$OUT_FILE_PATH"
 
 printStatus "[===>] Marking down..."
