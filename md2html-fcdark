@@ -1,6 +1,8 @@
 #!/bin/bash
 # Markdown Pretty Self-Contained HTML Generation Script
 # By Lucas Garron
+#
+# FcDark-Theme mod by Fallcom
 
 set -e
 
@@ -67,19 +69,19 @@ printMarkdown "`cat <<HEREDOC
 /* body */
 body {
 	margin: 20px 40px;
-	background-color: #fff;
-	color: #000;
+	background-color: #202020;
+	color: #909090;
 	font: 13px "Myriad Pro", "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 /* links */
 a:link {
-	color: #00f;
+	color: #9F9FED;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #00a;
+	color: #69699D;
 	text-decoration: none;
 }
 
@@ -93,6 +95,15 @@ a:active {
 	text-decoration: underline;
 }
 
+/* format tags */
+
+em {
+	color: #94BB7F;
+}
+
+strong {
+	color: #BB4848;
+}
 
 /* html tags */
 
@@ -109,21 +120,22 @@ a:active {
 /* code */
 
 pre, code {
-	font-size: 11px; font-family: monaco, courier, consolas, monospace;
+	font-size: 11px; font-family: dejavu sans mono, monaco, courier, consolas, monospace;
+	color: #C0C0C0;
 }
 
 pre {
 	margin-top: 5px;
 	margin-bottom: 10px;
-	border: 1px solid #c7cfd5;
-	background: #f1f5f9;
+	border: 1px solid #404040;
+	background: #111;
 	margin: 20px 0;
 	padding: 8px;
 	text-align: left;
 }
 
 hr {
-	color: #919699;
+	color: #444;
 	size: 1;
 	width: 100%;
 	noshade: "noshade"
@@ -140,14 +152,14 @@ h1, h2, h3, h4, h5, h6 {
 h1	{
 	margin-top: 1em;
 	margin-bottom: 25px;
-	color: #000;
+	color: #DD7C49;
 	font-weight: bold;
 	font-size: 30px;
 }
 h2	{
 	margin-top: 2.5em;
 	font-size: 24px;
-	color: #000;
+	color: #D9C069;
 	padding-bottom: 2px;
 	border-bottom: 1px solid #919699;
 }
@@ -155,20 +167,20 @@ h3	{
 	margin-top: 2em;
 	margin-bottom: .5em;
 	font-size: 17px;
-	color: #000;
+	color: #909090;
 }
 h4	{
 	margin-top: 2em;
 	margin-bottom: .5em;
 	font-size: 15px;
-	color: #000;
+	color: #909090;
 }
 h5	{
 	margin-top: 20px;
 	margin-bottom: .5em;
     padding: 0;
 	font-size: 13px;
-	color: #000;
+	color: #909090;
 }
 
 h6	{
@@ -176,7 +188,7 @@ h6	{
 	margin-bottom: .5em;
     padding: 0;
 	font-size: 11px;
-	color: #000;
+	color: #909090;
 }
 
 p {
